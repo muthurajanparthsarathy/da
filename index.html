@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Multi Step Form | Webdevtrick.com</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+<header class="header">
+  <h1 class="header__title">ADMISSION</h1>
+</header>
+<div class="content">
+  <div class="content__inner">
+   
+    <div class="container overflow-hidden">
+      <div class="multisteps-form">
+        <div class="row">
+          <div class="col-12 col-lg-12 col-md-12 col-sm-12 ml-auto mr-auto mb-4">
+            <div class="multisteps-form__progress">
+              <button class="multisteps-form__progress-btn js-active" type="button" title="PInfo">Personal</button>
+              <button class="multisteps-form__progress-btn" type="button" title="comdetail">community</button>
+              <button class="multisteps-form__progress-btn" type="button" title="perogramme">school</button>
+              <button class="multisteps-form__progress-btn" type="button" title="school">graduation</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-10 m-auto">
+
+            <form  action=add.php method="post" class="multisteps-form__form" >
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Personal Details</h3>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6 ">
+                      <input class="multisteps-form__input  form-control " type="text" name="reg"  placeholder="Register no" />
+                    </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                      <select name="gender" class="multisteps-form__input form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                     </select>
+                    </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                      <input class="multisteps-form__input form-control input-lg" type="text"  name="name" placeholder="Name" />
+                    </div>
+                    <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                      <input class="multisteps-form__input form-control" type="email" name="religion" placeholder="Religion"/>
+                    </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                      <input class="multisteps-form__input form-control" type="date" name="dob" placeholder="dateofbirth"/>
+                    </div>
+                    <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                      <input class="multisteps-form__input form-control" type="text"name="nation" placeholder="nationality"/>
+                    </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                      <input class="multisteps-form__input form-control" type="text"  name="parent" placeholder="parentname"/>
+                    </div>
+                    <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                      <input class="multisteps-form__input form-control" type="email" name="email" placeholder="Email"/>
+                    </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                      <input class="multisteps-form__input form-control" type="text"  name="phno" placeholder="Contact number"/>
+                    </div>
+                  
+                  </div>
+                  <div class="button-row d-flex mt-5">
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+              <h3 class="multisteps-form__title">community Details</h3>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6 ">
+                      <input class="multisteps-form__input  form-control " type="text"  name="category"  placeholder="category" />
+                    </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                    <input class="multisteps-form__input  form-control " type="text"  name="caste"  placeholder="caste" />
+
+                    </div>
+                  </div>
+                  <div class="form-row mt-5">
+                     <div class="col-12 col-sm-6">
+                       <div class="label">Are you PWD(Persons with Disability)</div>
+                        <label for="radio11">Yes 
+                        <input type="radio" id="radio11" name="pwd" value="yes"></label>
+                        <label for="radio12">No
+                        <input type="radio" id="radio12" name="pwd" value="No"></label>   
+                       </div>
+                    <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                       <div class="label">Represented the University in Games</div>
+                       <label for="radio21">Yes 
+                       <input type="radio" id="radio21" name="games" value="Yes"></label>
+                      <label for="radio22">No
+                       <input type="radio" id="radio22" name="games" value="No"></label>
+                          </div>
+                        </div>
+                
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                      <div class="label">Are You a ward of Service/Ex-Serviceman?</div>
+                        <label for="radio31">Yes 
+                       <input type="radio" id="radio31" name="ward" value="Yes"></label>
+                       <label for="radio32">No
+                         <input type="radio" id="radio32" name="ward" value="No"></label>
+                        </div>
+                
+              
+                    <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                     <div class="label">NRI/Industrial Sponsored</div>
+                      <label for="radio41">Yes 
+                       <input type="radio" id="radio41" name="nri" value="Yes"></label>
+                     <label for="radio42">No
+                        <input type="radio" id="radio42" name="nri" value="No"></label>        
+                        </div>
+                
+               </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <div class="label">Are you NCC Certificate Holder</div>
+                     <label for="radio61">Yes 
+                    <input type="radio" id="radio61" name="NccHolder" value="Yes"></label>
+                     <label for="radio62">No
+                   <input type="radio" id="radio62" name="NccHolder" value="No"></label>                 
+                     </div>
+                    <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                    <div class="label">Are you from a Sri Lankan Tamil Refugee Camp?</div>
+            <label for="radio71">Yes 
+               <input type="radio" id="radio71" name="srilanka" value="Yes"></label>
+               <label for="radio72">No
+               <input type="radio" id="radio72" name="srilanka" value="No"></label>                    </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <div class="label">Are you Tamil Origin from Andaman and Nicobar Islands?</div>
+              <div class="spacetop">
+              <label for="radio51">Yes 
+               <input type="radio" id="radio51" name="andaman" value="Yes"></label>
+               <label for="radio52">No
+               <input type="radio" id="radio52" name="andaman" value="No"></label>
+            </div>                    </div>
+                  
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                    <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+              <h3 class="multisteps-form__title">Personal Details</h3>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6 ">
+                      <input type="text" name="predegree"  class="multisteps-form__input form-control" placeholder="preferred degree programme">                    </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                    <input   class="multisteps-form__input form-control" type="text" name="nativeplace" placeholder="nativity">
+                    </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input class="multisteps-form__input form-control"  type="text" name="programname" placeholder="programme name">
+                    </div>
+                   
+                  </div>
+                  <h2 id="head" >SSLC</h2>
+
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <div class="label">Status</span></div>
+               
+               <select name="sslc_status" class="multisteps-form__input form-control">
+                 <option value="Ongoing">Ongoing</option>
+                 <option value="Completed">Completed</option>
+              </select>              
+                  </div>
+
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input type="text" name="sslc_school"  class="multisteps-form__input form-control" placeholder="School">
+                  
+                  </div>
+                    <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                    <select name="sslc_board" class="multisteps-form__input form-control">
+                  <option value="State Board">STATE BOARD</option>
+                  <option value="CBSC">CBSC</option>
+                  <option value="ICSC">ICSC</option>
+               </select>                     </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input type="text" name="sslc_mark"  class="multisteps-form__input form-control" placeholder="Mark">
+                    </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                    <input type="text" name="sslc_yop"  class="multisteps-form__input form-control" placeholder="year of passing"> 
+                      </div>
+                  </div>
+                  <h3 class="multisteps-form__title" id="head">HSC</h3>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <div class="label">Status</span></div>
+               
+               <select name="hsc_status" class="multisteps-form__input form-control">
+                 <option value="Ongoing">Ongoing</option>
+                 <option value="Completed">Completed</option>
+              </select>              
+                  </div>
+                  <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                  <input type="text" name="hsc_group"  class="multisteps-form__input form-control" placeholder="GROUP/SUBJECT">
+                    </div>
+
+                  </div>
+       
+
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input type="text" name="hsc_school"  class="multisteps-form__input form-control" placeholder="School">       
+                  </div>
+                  <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+    
+                <select name="hsc_board" class="multisteps-form__input form-control">
+                 <option value="State Board">STATE BOARD</option>
+                 <option value="CBSC">CBSC</option>
+                 <option value="ICSC">ICSC</option>
+              </select>
+                    </div>
+
+                  </div>
+                  
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input type="text" name="hsc_mark" class="multisteps-form__input form-control" placeholder="Mark">
+                    </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                    <input type="text" name="hsc_yop"  class="multisteps-form__input form-control" placeholder="year of passing"> 
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="button-row d-flex mt-4 col-12">
+                      <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+                      <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+         
+                <div class="multisteps-form__content">
+                <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+<div><label for="g_status">Status</label></div>
+                    <select name="g_status" class="multisteps-form__input form-control" >
+                                 <option value="Ongoing">Ongoing</option>
+                                 <option value="Completed">Completed</option>
+                              </select>                    </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                    <div><label for="g_exampattern">&nbsp;</label></div>
+                    <input type="text" name="g_exampattern" class="multisteps-form__input form-control" placeholder="exampattern">   
+                                     </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input type="text" name="g_college"  class="multisteps-form__input form-control" placeholder="College">     
+                                 </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                    <input type="text" name="g_university"  class="multisteps-form__input form-control" placeholder="University">         
+                               </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input type="text" name="g_branch"  class="multisteps-form__input form-control" placeholder="branch">     
+                                 </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                    <input type="text" name="g_yop"  class="multisteps-form__input form-control" placeholder="Year of passing">         
+                               </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input type="text" name="g_mark1"  class="multisteps-form__input form-control" placeholder="Percentage of Mark(PART 1)">     
+                                 </div>
+                    <div class="col-12 col-sm-6  mt-5 mt-sm-0">
+                      
+                    <input type="text" name="g_mark2"  class="multisteps-form__input form-control" placeholder="Percentage of Mark(PART 2)">     
+                               </div>
+                  </div>
+                  <div class="form-row mt-5">
+                    <div class="col-12 col-sm-6">
+                    <input type="text" name="g_mark3"  class="multisteps-form__input form-control" placeholder="Percentage of Mark(PART 3)">     
+                                 </div>
+                  
+                  </div>
+                
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
+
+                    <button type="submit" class="btn btn-success"  id="submit">Submit</button>       
+
+
+                     </div>
+                  
+                </div>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script  src="function.js"></script>
+
+</body>
+</html>
